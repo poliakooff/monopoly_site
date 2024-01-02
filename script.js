@@ -69,7 +69,7 @@ function handleFormSubmit(event) {
       return response.json();
     })
     .then((data) => {
-      console.log(data);
+      // console.log(data);
       if (data.success) {
         submitButton.value = 'Відправлено';
         submitButton.style.background = '#4CAF50';
@@ -80,11 +80,11 @@ function handleFormSubmit(event) {
         }, 1000);
       } else {
         submitButton.value = 'Не працює';
-        console.error('Server Error:', data.message);
+        // console.error('Server Error:', data.message);
       }
     })
     .catch((error) => {
-      console.error('Error:', error);
+      // console.error('Error:', error);
       submitButton.value = 'Не працює';
 
       modal.style.opacity = '0';
@@ -107,13 +107,13 @@ function handleFormSubmit(event) {
       return response.text();
     })
     .then((responseText) => {
-      console.log(
-        'Успех (telegram.php): Данные успешно отправлены на сервер!',
-        responseText
-      );
+      // console.log(
+      //   'Успех (telegram.php): Данные успешно отправлены на сервер!',
+      //   responseText
+      // );
     })
     .catch((error) => {
-      console.error('Ошибка (telegram.php):', error.message);
+      // console.error('Ошибка (telegram.php):', error.message);
     });
 }
 
