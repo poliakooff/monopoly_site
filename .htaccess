@@ -1,0 +1,37 @@
+<IfModule mod_headers.c>
+    # Встановлення кеш-контролю для всіх файлів
+    <FilesMatch ".">
+        Header set Cache-Control "max-age=31536000"
+    </FilesMatch>
+
+    # Установка заголовка Cache-Control для кэширования на стороне клиента
+    <FilesMatch "\.(html|htm|js|css)$">
+        # Включение ETag и Last-Modified
+        FileETag MTime Size
+        Header set Cache-Control "public, max-age=86400"
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    # Увімкнення модуля перезапису
+
+    # Перенаправлення на HTTPS, якщо використовується звичайний HTTP
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Перенаправлення без .html
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+
+    # Перенаправлення на сторінку без .html при використанні явного розширення
+    RewriteCond %{THE_REQUEST} \s/+(.+?)\.html [NC]
+    RewriteRule ^ /%1 [R=301,L]
+
+    # Перенаправлення на корінь при запиті index.html   
+    RewriteRule ^index\.html$ / [NC,L,R=301]
+</IfModule>
+
+ 

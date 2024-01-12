@@ -1,1 +1,611 @@
-html,body{height:100%;margin:0;font-family:'Open Sans',sans-serif;scroll-behavior:smooth;overflow-x:hidden;cursor:url('cursor/default.png'),default}section{display:flex;flex-direction:column;align-items:center;padding:0 10px}a,button{text-decoration:none;font-weight:bold;color:#e75079;cursor:url('cursor/pointer.png'),default}#preloader{position:fixed;top:0;left:0;width:100%;height:100%;display:flex;justify-content:center;align-items:center;font-family:monospace;font-weight:bold;font-size:16px;background-color:#FFF;color:#555;user-select:none;transition:opacity 1s ease,visibility 1s ease;visibility:visible;opacity:1;z-index:99}.preloader__hide{visibility:hidden!important;opacity:0!important}#header{margin:15px}#header .header__box{display:flex;justify-content:space-between;align-items:center}#header .logo{font-family:'Rubik Mono One',sans-serif;font-weight:400;font-size:16px;color:#555;user-select:none}#header .nav{font-size:14px}#header .nav .nav__item:not(:last-child){margin-right:15px}#header .phone{display:flex;flex-direction:column}#promo{position:relative}#promo .promo__title{margin-bottom:-35px;font-family:'Rubik Mono One',sans-serif;font-weight:400;font-size:60px;text-align:center}#promo .promo__img{max-width:100%;max-height:350px}#promo .promo_description{display:flex;justify-content:center;align-items:center;width:380px;height:125px;margin-top:-100px;background-image:url('image/brush.png');background-position:50%;background-size:contain;background-repeat:no-repeat;font-weight:bold;text-align:center}#promo .promo__price{display:flex;align-items:flex-start}#promo .promo__price .price__amount{font-family:'Rubik Mono One',sans-serif;font-weight:400;font-size:40px}#promo .promo__price .price__currency{margin-left:10px;border-bottom:2px solid #000;font-weight:400}#promo .promo__advice{margin-top:8px;font-size:13px;font-weight:bold;color:#555}#promo .promo__air{position:absolute;top:50%;left:50%;font-family:'Caveat',cursive}#promo .promo__air p{width:150px;font-size:24px;transform:rotate(-25deg) translate(0,-50px)}#promo .air__left{transform:translate(-400px,50px)}#promo .air__right{top:0;transform:translate(400px,50px)}#promo .air__right img{transform:scaleX(-1);rotate:30deg}#promo .air__right p{transform:rotate(25deg) translate(0,-30px)}#about{position:relative;margin-top:50px}#about .about__title{font-family:'Rubik Mono One',sans-serif;font-weight:400;font-size:40px;color:#aaa}#about .about__box{display:flex;align-items:flex-end;max-width:800px}#about .about__content{margin-right:15px;z-index:2}#about .about__content h3{margin-bottom:10px;font-family:'Rubik Mono One',sans-serif;font-weight:400;font-size:18px;color:#555}#about .about__content p{margin-top:0;font-family:'Caveat',cursive;font-size:24px}#about .about__img{width:330px}#about .about__air{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:1}#about .about__air .air__money{height:100px;transform:translate(-350px,150px)}#about .about__air .air__bag{height:120px;transform:translate(-300px,-100px)}#about .about__air .air__hat{height:130px;transform:translate(500px,80px)}#photo{margin-top:50px}#photo .photo__title{font-family:'Rubik Mono One',sans-serif;font-weight:400;font-size:40px;color:#aaa}#photo .photo__box{display:flex}#photo .photo__list{position:relative;padding:0;width:170px;height:400px;list-style:none;overflow:hidden}#photo .photo__list img{width:170px}#photo .photo__list::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:100px;background-image:linear-gradient(to top,#fff,transparent)}#photo .photo__frame{width:550px}#photo .photo__frame img{width:550px}#photo .photo__content h3{margin-bottom:10px;font-family:'Rubik Mono One',sans-serif;font-weight:400;font-size:18px;color:#555}#photo .photo__content ul{margin-top:0;padding:0;font-family:'Caveat',cursive;font-size:24px;list-style:none}#question{margin-top:50px}#question .question__title{font-family:'Rubik Mono One',sans-serif;font-weight:400;font-size:40px;color:#aaa}#question .question__list{display:flex;flex-wrap:wrap;justify-content:center;max-width:1200px}#question .question__list .question__item{position:relative;max-width:300px;margin-right:15px;margin-bottom:30px;padding-left:65px}#question .question__list .question__item dt{position:relative;margin-bottom:10px;font-family:'Rubik Mono One',sans-serif;font-weight:400;font-size:18px;color:#555;z-index:2}#question .question__list .question__item dd{position:relative;margin-top:0;padding:0;font-family:'Caveat',cursive;font-size:24px;list-style:none;z-index:2}#question .question__list .question__item img{position:absolute;left:0;top:40px;height:80px;z-index:1}#delivery{position:relative;margin-top:50px;padding-bottom:100px}#delivery .delivery__title{font-family:'Rubik Mono One',sans-serif;font-weight:400;font-size:40px;color:#aaa}#delivery .delivery__box{display:flex;justify-content:space-between;width:800px;margin-bottom:30px}#delivery .delivery__option{max-width:380px;font-family:'Caveat',cursive;font-size:24px}#delivery .delivery__option h3{margin-bottom:10px;font-family:'Rubik Mono One',sans-serif;font-weight:400;font-size:18px;color:#555}#delivery .delivery__option .delivery__img{height:40px}#delivery .delivery__option .delivery__img img{height:40px}#delivery .delivery__option .advice{display:flex;align-items:center;flex-wrap:wrap;font-size:18px;color:#555}#delivery .delivery__option .advice h6{margin:0 5px;font-size:18px}#delivery .delivery__air{position:absolute;top:50%;left:50%;font-family:'Caveat',cursive}#delivery .delivery__air p{width:150px;font-size:24px}#delivery .air__left{transform:translate(-400px,65px)}#delivery .air__left p{transform:rotate(-25deg) translate(-65px,-230px)}#delivery .air__left img{transform:scaleX(-1) rotate(210deg)}#delivery .air__right{top:0;transform:translate(200px,340px)}#delivery .air__right img{transform:rotate(210deg)}#delivery .air__right p{transform:rotate(25deg) translate(110px,-275px)}#modal{position:fixed;left:0;top:0;display:none;width:100%;height:100%;background-color:rgba(0,0,0,0.4);transition:opacity 1s ease;z-index:3}#modal .modal__content{display:flex;flex-direction:column;align-items:center;margin:auto;padding:20px;width:auto;background-color:#fefefe;border:1px solid #888;border-radius:15px;box-shadow:0 30px 15px -20px #333}#modal .modal__content .modal__title{margin-top:5px;font-family:'Rubik Mono One',sans-serif;font-weight:400;font-size:40px;color:#AAA}#modal .modal__content .modal__choice{display:flex;flex-direction:column;align-items:flex-end;width:200px;margin-right:15px}#modal .modal__content .modal__choice strong{margin:5px 0;font-family:'Rubik Mono One',sans-serif;font-weight:400;font-size:18px;color:#555}#modal .modal__content .modal__choice .choice__item{display:flex;align-items:center;margin-bottom:5px}#modal .modal__content .modal__choice .choice__item input[type="radio"]{display:none}#modal .modal__content .modal__choice .choice__item input[type="radio"]:checked+.radio__button .check{transform:translate(-50%,-50%) scale(1)}#modal .modal__content .modal__choice .choice__item .radio__button{width:20px;height:20px;margin-left:10px;border-radius:50%;background:#fff;border:2px solid #e75079;display:inline-block;position:relative}#modal .modal__content .modal__choice .choice__item .radio__button .check{width:13px;height:13px;border-radius:50%;background:#e75079;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(0);transition:300ms transform ease-in-out}#modal .modal__content .modal__choice .choice__item label{display:flex;align-items:center;flex-wrap:wrap;font-size:18px;color:#555}#modal .modal__content .modal__choice .choice__item *{cursor:url('cursor/pointer.png'),default}#modal .modal__content .modal__contact{display:flex;flex-direction:column;align-items:center;width:230px}#modal .modal__content .modal__contact .contact__form{display:flex;flex-direction:column}#modal .modal__content .modal__contact .contact__form input{margin-top:5px;padding:12px 12px;font-size:16px;border:5px solid #c3c3c3;outline:0;cursor:url('cursor/pointer.png'),default}#modal .modal__content .modal__contact .contact__form input[type='submit']{padding:12px 20px;background:#e75079;font-family:'Rubik Mono One',cursive;font-weight:400;color:#fff;outline:0;border:0}#modal .modal__content .modal__contact .contact__or{margin:15px 0}#modal .modal__content .modal__contact .contact__social{display:flex;justify-content:space-between;width:100%}#modal .modal__content .modal__contact .contact__social h4{margin:0;color:#e75079;cursor:url('cursor/pointer.png'),default}.wrap{display:flex}.button__buy{width:150px;padding:12px 20px;background:#e75079;font-family:'Rubik Mono One',cursive;font-weight:400;color:#fff;outline:0;border:0}img{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;pointer-events:none}::selection{background-color:#AAA;color:#FFF}@media(max-width:862px){#header .logo{display:none}#header .nav{display:none}#promo .promo__title{font-size:42px}#promo .promo__air{display:none}#about .about__box{flex-direction:column;align-items:center}#about .about__air{display:none}#photo .wrap{flex-direction:column;align-items:center}#photo .photo__list{display:flex;height:auto;width:auto}#delivery .delivery__box{flex-direction:column;align-items:center;width:auto;padding:10px}#delivery .delivery__air{display:none}#modal .modal__content{margin:30px;overflow-y:scroll}#modal .modal__content .modal__title{font-size:30px;text-align:center}#modal .modal__content .modal__box{flex-direction:column;align-items:flex-end}#modal .modal__content .modal__choice{margin-right:0}}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  cursor: url('cursor/default.png'), default;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+}
+a,
+button {
+  text-decoration: none;
+  font-weight: bold;
+  color: #e75079;
+  cursor: url('cursor/pointer.png'), default;
+}
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #fff;
+  color: #555;
+  user-select: none;
+  transition: opacity 1s ease, visibility 1s ease;
+  visibility: visible;
+  opacity: 1;
+  z-index: 99;
+}
+.preloader__hide {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+#header {
+  margin: 15px;
+}
+#header .header__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .logo {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #555;
+  user-select: none;
+}
+#header .nav {
+  font-size: 14px;
+}
+#header .nav .nav__item:not(:last-child) {
+  margin-right: 15px;
+}
+#header .phone {
+  display: flex;
+  flex-direction: column;
+}
+#promo {
+  position: relative;
+}
+#promo .promo__title {
+  margin-bottom: -35px;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  text-align: center;
+}
+#promo .promo__img {
+  max-width: 100%;
+  max-height: 350px;
+}
+#promo .promo_description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 125px;
+  margin-top: -100px;
+  background-image: url('image/brush.png');
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  text-align: center;
+}
+#promo .promo__price {
+  display: flex;
+  align-items: flex-start;
+}
+#promo .promo__price .price__amount {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+}
+#promo .promo__price .price__currency {
+  margin-left: 10px;
+  border-bottom: 2px solid #000;
+  font-weight: 400;
+}
+#promo .promo__advice {
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #555;
+}
+#promo .promo__air {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: 'Caveat', cursive;
+}
+#promo .promo__air p {
+  width: 150px;
+  font-size: 24px;
+  transform: rotate(-25deg) translate(0, -50px);
+}
+#promo .air__left {
+  transform: translate(-400px, 50px);
+}
+#promo .air__right {
+  top: 0;
+  transform: translate(400px, 50px);
+}
+#promo .air__right img {
+  transform: scaleX(-1);
+  rotate: 30deg;
+}
+#promo .air__right p {
+  transform: rotate(25deg) translate(0, -30px);
+}
+#about {
+  position: relative;
+  margin-top: 50px;
+}
+#about .about__title {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #aaa;
+}
+#about .about__box {
+  display: flex;
+  align-items: flex-end;
+  max-width: 800px;
+}
+#about .about__content {
+  margin-right: 15px;
+  z-index: 2;
+}
+#about .about__content h3 {
+  margin-bottom: 10px;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #555;
+}
+#about .about__content p {
+  margin-top: 0;
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+}
+#about .about__img {
+  width: 330px;
+}
+#about .about__air {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+#about .about__air .air__money {
+  height: 100px;
+  transform: translate(-350px, 150px);
+}
+#about .about__air .air__bag {
+  height: 120px;
+  transform: translate(-300px, -100px);
+}
+#about .about__air .air__hat {
+  height: 130px;
+  transform: translate(500px, 80px);
+}
+#photo {
+  margin-top: 50px;
+}
+#photo .photo__title {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #aaa;
+}
+#photo .photo__box {
+  display: flex;
+}
+#photo .photo__list {
+  position: relative;
+  padding: 0;
+  width: 170px;
+  height: 400px;
+  list-style: none;
+  overflow: hidden;
+}
+#photo .photo__list img {
+  width: 170px;
+}
+#photo .photo__list::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(to top, #fff, transparent);
+}
+#photo .photo__frame {
+  width: 550px;
+}
+#photo .photo__frame img {
+  width: 550px;
+}
+#photo .photo__content h3 {
+  margin-bottom: 10px;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #555;
+}
+#photo .photo__content ul {
+  margin-top: 0;
+  padding: 0;
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  list-style: none;
+}
+#question {
+  margin-top: 50px;
+}
+#question .question__title {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #aaa;
+}
+#question .question__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+}
+#question .question__list .question__item {
+  position: relative;
+  max-width: 300px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  padding-left: 65px;
+}
+#question .question__list .question__item dt {
+  position: relative;
+  margin-bottom: 10px;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #555;
+  z-index: 2;
+}
+#question .question__list .question__item dd {
+  position: relative;
+  margin-top: 0;
+  padding: 0;
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  list-style: none;
+  z-index: 2;
+}
+#question .question__list .question__item img {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  height: 80px;
+  z-index: 1;
+}
+#delivery {
+  position: relative;
+  margin-top: 50px;
+}
+#delivery .delivery__title {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #aaa;
+}
+#delivery .delivery__box {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin-bottom: 30px;
+}
+#delivery .delivery__option {
+  max-width: 380px;
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+}
+#delivery .delivery__option h3 {
+  margin-bottom: 10px;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #555;
+}
+#delivery .delivery__option .delivery__img {
+  height: 40px;
+}
+#delivery .delivery__option .delivery__img img {
+  height: 40px;
+}
+#delivery .delivery__option .advice {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 18px;
+  color: #555;
+}
+#delivery .delivery__option .advice h6 {
+  margin: 0 5px;
+  font-size: 18px;
+}
+#delivery .delivery__air {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: 'Caveat', cursive;
+}
+#delivery .delivery__air p {
+  width: 150px;
+  font-size: 24px;
+}
+#delivery .air__left {
+  transform: translate(-400px, 110px);
+}
+#delivery .air__left p {
+  transform: rotate(-25deg) translate(-65px, -230px);
+}
+#delivery .air__left img {
+  transform: scaleX(-1) rotate(210deg);
+}
+#delivery .air__right {
+  top: 0;
+  transform: translate(200px, 340px);
+}
+#delivery .air__right img {
+  transform: rotate(210deg);
+}
+#delivery .air__right p {
+  transform: rotate(25deg) translate(110px, -275px);
+}
+#outreach {
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+#outreach .outreach__title {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #aaa;
+}
+#outreach .outreach__list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow-x: auto;
+}
+#outreach .outreach__list .outreach__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  margin: 0 15px;
+}
+#outreach .outreach__list .outreach__name {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+#modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: opacity 1s ease;
+  z-index: 3;
+}
+#modal .modal__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+  width: auto;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 15px;
+  box-shadow: 0 30px 15px -20px #333;
+}
+#modal .modal__content .modal__title {
+  margin-top: 5px;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #aaa;
+}
+#modal .modal__content .modal__choice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 200px;
+  margin-right: 15px;
+}
+#modal .modal__content .modal__choice strong {
+  margin: 5px 0;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #555;
+}
+#modal .modal__content .modal__choice .choice__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+#modal .modal__content .modal__choice .choice__item input[type='radio'] {
+  display: none;
+}
+#modal
+  .modal__content
+  .modal__choice
+  .choice__item
+  input[type='radio']:checked
+  + .radio__button
+  .check {
+  transform: translate(-50%, -50%) scale(1);
+}
+#modal .modal__content .modal__choice .choice__item .radio__button {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #e75079;
+  display: inline-block;
+  position: relative;
+}
+#modal .modal__content .modal__choice .choice__item .radio__button .check {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #e75079;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 300ms transform ease-in-out;
+}
+#modal .modal__content .modal__choice .choice__item label {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 18px;
+  color: #555;
+}
+#modal .modal__content .modal__choice .choice__item * {
+  cursor: url('cursor/pointer.png'), default;
+}
+#modal .modal__content .modal__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 230px;
+}
+#modal .modal__content .modal__contact .contact__form {
+  display: flex;
+  flex-direction: column;
+}
+#modal .modal__content .modal__contact .contact__form input {
+  margin-top: 5px;
+  padding: 12px 12px;
+  font-size: 16px;
+  border: 5px solid #c3c3c3;
+  outline: 0;
+  cursor: url('cursor/pointer.png'), default;
+}
+#modal .modal__content .modal__contact .contact__form input[type='submit'] {
+  padding: 12px 20px;
+  background: #e75079;
+  font-family: 'Rubik Mono One', cursive;
+  font-weight: 400;
+  color: #fff;
+  outline: 0;
+  border: 0;
+}
+#modal .modal__content .modal__contact .contact__or {
+  margin: 15px 0;
+}
+#modal .modal__content .modal__contact .contact__social {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#modal .modal__content .modal__contact .contact__social h4 {
+  margin: 0;
+  color: #e75079;
+  cursor: url('cursor/pointer.png'), default;
+}
+.wrap {
+  display: flex;
+}
+.button__buy {
+  width: 150px;
+  padding: 12px 20px;
+  background: #e75079;
+  font-family: 'Rubik Mono One', cursive;
+  font-weight: 400;
+  color: #fff;
+  outline: 0;
+  border: 0;
+}
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+::selection {
+  background-color: #aaa;
+  color: #fff;
+}
+@media (max-width: 862px) {
+  #header .logo {
+    display: none;
+  }
+  #header .nav {
+    display: none;
+  }
+  #promo .promo__title {
+    font-size: 42px;
+  }
+  #promo .promo__air {
+    display: none;
+  }
+  #about .about__box {
+    flex-direction: column;
+    align-items: center;
+  }
+  #about .about__air {
+    display: none;
+  }
+  #photo .wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  #photo .photo__list {
+    display: flex;
+    height: auto;
+    width: auto;
+  }
+  #delivery .delivery__box {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 10px;
+  }
+  #delivery .delivery__air {
+    display: none;
+  }
+  #outreach .outreach__list {
+    justify-content: flex-start;
+  }
+  #modal .modal__content {
+    margin: 30px;
+    overflow-y: scroll;
+  }
+  #modal .modal__content .modal__title {
+    font-size: 30px;
+    text-align: center;
+  }
+  #modal .modal__content .modal__box {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  #modal .modal__content .modal__choice {
+    margin-right: 0;
+  }
+}
