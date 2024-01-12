@@ -189,7 +189,7 @@ button {
 }
 #about .about__air .air__bag {
   height: 120px;
-  transform: translate(-300px, -100px);
+  transform: translate(-300px, -250px);
 }
 #about .about__air .air__hat {
   height: 130px;
