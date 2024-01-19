@@ -26,7 +26,7 @@
     />
     <meta http-equiv="content-language" content="uk-UA" />
     <meta name="robots" content="index, follow" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css?v=2.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script type="application/ld+json">
@@ -198,13 +198,13 @@
             itemtype="http://schema.org/ListItem"
           >
             <li
-              class="photo__item"
+              class="photo__item active"
               itemprop="item"
               itemscope
               itemtype="http://schema.org/ImageObject"
             >
               <img
-                src="image/monopoly-classical_mini_1.webp"
+                src="image/image-v2_mini_1_uk.webp"
                 width="170"
                 height="128"
                 loading="lazy"
@@ -219,7 +219,7 @@
               itemtype="http://schema.org/ImageObject"
             >
               <img
-                src="image/monopoly-classical_min_2.webp"
+                src="image/image-v2_mini_2_uk.webp"
                 width="170"
                 height="128"
                 loading="lazy"
@@ -234,7 +234,7 @@
               itemtype="http://schema.org/ImageObject"
             >
               <img
-                src="image/monopoly-classical_min_3.webp"
+                src="image/image-v2_mini_3_uk.webp"
                 width="170"
                 height="128"
                 loading="lazy"
@@ -243,14 +243,21 @@
               <meta itemprop="name" content="вигляд" />
             </li>
           </ol>
-          <div class="photo__frame">
-            <img
-              src="image/monopoly-classical_big.webp"
-              width="550"
-              height="413"
-              loading="lazy"
-              alt="фото гри"
-            />
+          <div class="photo__wrap">
+            <div class="photo__frame">
+              <img
+                src="image/image-v2_big_1_uk.webp"
+                width="550"
+                height="413"
+                loading="lazy"
+                class="active"
+                alt="фото гри"
+              />
+            </div>
+            <div class="photo__control">
+              <button class="photo__arrow-back"></button
+              ><button class="photo__arrow-next"></button>
+            </div>
           </div>
           <div class="photo__content">
             <h3>В Упаковці</h3>
@@ -653,7 +660,7 @@
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@400&family=Rubik+Mono+One&display=swap"
       rel="stylesheet"
     />
-    <script src="script.js" defer></script>
+    <script src="script.js?v=2.0" defer></script>
     <!-- Analytics -->
     <script
       async
