@@ -26,7 +26,7 @@
     />
     <meta http-equiv="content-language" content="ru-UA" />
     <meta name="robots" content="index, follow" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style?v=2.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script type="application/ld+json">
@@ -189,13 +189,13 @@
             itemtype="http://schema.org/ListItem"
           >
             <li
-              class="photo__item"
+              class="photo__item active"
               itemprop="item"
               itemscope
               itemtype="http://schema.org/ImageObject"
             >
               <img
-                src="image/monopoly_harry_image-v1_mini_1.webp"
+                src="image/image-v2_mini_1_ru.webp"
                 width="218"
                 height="128"
                 loading="lazy"
@@ -210,7 +210,7 @@
               itemtype="http://schema.org/ImageObject"
             >
               <img
-                src="image/monopoly_harry_image-v1_mini_2.webp"
+                src="image/image-v2_mini_2_ru.webp"
                 width="170"
                 height="128"
                 loading="lazy"
@@ -225,7 +225,7 @@
               itemtype="http://schema.org/ImageObject"
             >
               <img
-                src="image/monopoly_harry_image-v1_mini_3.webp"
+                src="image/image-v2_mini_3_ru.webp"
                 width="170"
                 height="128"
                 loading="lazy"
@@ -234,14 +234,21 @@
               <meta itemprop="name" content="вид сверху" />
             </li>
           </ol>
-          <div class="photo__frame">
-            <img
-              src="image/monopoly_harry_image-v1_big.webp"
-              width="550"
-              height="413"
-              loading="lazy"
-              alt="фото игры"
-            />
+          <div class="photo__wrap">
+            <div class="photo__frame">
+              <img
+                src="image/image-v2_big_1_ru.webp"
+                width="550"
+                height="413"
+                loading="lazy"
+                class="active"
+                alt="фото гри"
+              />
+            </div>
+            <div class="photo__control">
+              <button class="photo__arrow-back"></button
+              ><button class="photo__arrow-next"></button>
+            </div>
           </div>
           <div class="photo__content">
             <h3>В Упаковке</h3>
@@ -642,7 +649,7 @@
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@400&family=Rubik+Mono+One&display=swap"
       rel="stylesheet"
     />
-    <script src="script.js" defer></script>
+    <script src="script.js?v=2.0" defer></script>
     <!-- Analytics -->
     <script
       async
