@@ -22,15 +22,17 @@ function changeImage(index) {
     item.classList.remove('active');
   });
   photoItems[index].classList.add('active');
-
   const imgSrc = photoItems[index].querySelector('img').getAttribute('src');
   const imgAlt = photoItems[index].querySelector('img').getAttribute('alt');
   const modifiedImgSrc = imgSrc.replace('mini', 'big');
 
+  const imgWidth = photoFrame.querySelector('img').getAttribute('width');
+  const imgHeight = photoFrame.querySelector('img').getAttribute('height');
+
   const imgElement = document.createElement('img');
   imgElement.src = modifiedImgSrc;
-  imgElement.width = '550';
-  imgElement.height = '413';
+  imgElement.width = imgWidth;
+  imgElement.height = imgHeight;
   imgElement.loading = 'lazy';
   imgElement.classList = 'active';
   imgElement.alt = imgAlt;
