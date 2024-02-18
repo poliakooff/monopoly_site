@@ -43,7 +43,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "UAH",
-          "price": 690,
+          "price": 990,
           "itemCondition": "https://schema.org/NewCondition",
           "availability": "https://schema.org/InStock",
           "seller": {
@@ -94,10 +94,16 @@
         <div class="promo_description" itemprop="description">
           гра для друзів на вечір, де кожен відчує себе великим бізнесменом
         </div>
-        <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+        <div
+          class="promo__price"
+          itemprop="offers"
+          itemscope
+          itemtype="http://schema.org/Offer"
+        >
           <meta itemprop="priceCurrency" content="UAH" />
-          <div class="promo__price" itemprop="price">
-            <span class="price__amount">690</span>
+          <span class="price__old">1300</span>
+          <div class="price__new" itemprop="price">
+            <span class="price__amount">990</span>
             <span class="price__currency">грн</span>
           </div>
         </div>
@@ -669,7 +675,7 @@
                 name="title"
                 value="Монополія (класична монополія)"
               />
-              <input type="hidden" name="price" id="price" value="690" />
+              <input type="hidden" name="price" id="price" value="990" />
               <input type="hidden" name="payment" id="payment" value="cash" />
               <input type="hidden" name="service" id="service" value="nova" />
               <input type="submit" value="Готово" />

@@ -97,16 +97,25 @@ button {
   font-weight: bold;
   text-align: center;
 }
-#promo .promo__price {
+#promo .promo__price .price__old {
+  margin-left: 10px;
+  margin-bottom: -8px;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  text-decoration: line-through;
+  color: #bb352c;
+}
+#promo .promo__price .price__new {
   display: flex;
   align-items: flex-start;
 }
-#promo .promo__price .price__amount {
+#promo .promo__price .price__new .price__amount {
   font-family: 'Rubik Mono One', sans-serif;
   font-weight: 400;
   font-size: 40px;
 }
-#promo .promo__price .price__currency {
+#promo .promo__price .price__new .price__currency {
   margin-left: 10px;
   border-bottom: 2px solid #000;
   font-weight: 400;
