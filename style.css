@@ -257,7 +257,7 @@ button {
   position: relative;
   display: flex;
   justify-content: center;
-  width: 770px;
+  width: 600px;
   margin: 0 30px;
 }
 @keyframes fadeIn {
