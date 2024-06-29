@@ -490,7 +490,8 @@ button {
   font-size: 14px;
   text-align: center;
 }
-#modal {
+#modal,
+#modalBuyAnother {
   position: fixed;
   left: 0;
   top: 0;
@@ -501,7 +502,16 @@ button {
   transition: opacity 1s ease;
   z-index: 3;
 }
-#modal .modal__content {
+#modalBuyAnother .modal__descr {
+  margin-top: 0;
+  margin-bottom: 20px;
+  max-width: 500px;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: 23px;
+}
+#modal .modal__content,
+#modalBuyAnother .modal__content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -513,7 +523,8 @@ button {
   border-radius: 15px;
   box-shadow: 0 30px 15px -20px #333;
 }
-#modal .modal__content .modal__title {
+#modal .modal__content .modal__title,
+#modalBuyAnother .modal__content .modal__title {
   margin-top: 5px;
   font-family: 'Rubik Mono One', sans-serif;
   font-weight: 400;
@@ -527,7 +538,8 @@ button {
   width: 200px;
   margin-right: 15px;
 }
-#modal .modal__content .modal__choice strong {
+#modal .modal__content .modal__choice strong,
+#modalBuyAnother .modal__content .modal__choice strong {
   margin: 5px 0;
   font-family: 'Rubik Mono One', sans-serif;
   font-weight: 400;
@@ -635,6 +647,17 @@ button {
   outline: 0;
   border: 0;
 }
+.button__buy__another {
+  width: 150px;
+  padding: 12px 20px;
+  background: #e75079;
+  font-family: 'Rubik Mono One', cursive;
+  font-weight: 400;
+  color: #fff;
+  outline: 0;
+  border: 0;
+}
+
 img {
   -webkit-user-select: none;
   -moz-user-select: none;

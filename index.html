@@ -28,7 +28,7 @@
     />
     <meta http-equiv="content-language" content="uk-UA" />
     <meta name="robots" content="index, follow" />
-    <link rel="stylesheet" type="text/css" href="style.css?v=2.3" />
+    <link rel="stylesheet" type="text/css" href="style.css?v=3.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script type="application/ld+json">
@@ -45,7 +45,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "UAH",
-          "price": 1200,
+          "price": 650,
           "itemCondition": "https://schema.org/NewCondition",
           "availability": "https://schema.org/InStock",
           "seller": {
@@ -105,13 +105,13 @@
           itemtype="http://schema.org/Offer"
         >
           <meta itemprop="priceCurrency" content="UAH" />
-          <!-- <span class="price__old">1200</span> -->
+          <span class="price__old">1200</span>
           <div class="price__new" itemprop="price">
-            <span class="price__amount">1200</span>
+            <span class="price__amount">650</span>
             <span class="price__currency">грн</span>
           </div>
         </div>
-        <button class="button__buy">КУПИТИ</button>
+        <button class="button__buy button__buy__another">КУПИТИ</button>
         <span class="promo__advice">може бути у вас завтра</span>
         <div class="promo__air air__left">
           <img
@@ -140,7 +140,7 @@
           <div class="about__content">
             <h3>Скільки коштує?</h3>
             <p itemprop="description">
-              Настільна гра «Монополія: Банк без Меж» коштує 1200 грн. Всі інші
+              Настільна гра «Монополія: Банк без Меж» коштує 650 грн. Всі інші
               ціни які ви можете побачити у конкурентів - це завищена вартість.
             </p>
             <h3>Українською</h3>
@@ -332,7 +332,7 @@
               <li>- правила гри</li>
               <li>- 400х265х40мм розмір коробки</li>
             </ul>
-            <button class="button__buy">КУПИТИ</button>
+            <button class="button__buy button__buy__another">КУПИТИ</button>
           </div>
         </div>
       </section>
@@ -552,7 +552,7 @@
             </div>
           </div>
         </div>
-        <button class="button__buy">КУПИТИ</button>
+        <button class="button__buy button__buy__another">КУПИТИ</button>
         <div class="delivery__air air__left">
           <img
             src="image/arrow.png"
@@ -726,7 +726,7 @@
                 name="title"
                 value="Монополія (Банк Без Меж)"
               />
-              <input type="hidden" name="price" id="price" value="1200" />
+              <input type="hidden" name="price" id="price" value="650" />
               <input type="hidden" name="payment" id="payment" value="cash" />
               <input type="hidden" name="service" id="service" value="nova" />
               <input type="submit" value="Готово" />
@@ -750,12 +750,30 @@
         </div>
       </div>
     </div>
+    <div id="modalBuyAnother">
+      <div class="modal__content">
+        <h2 class="modal__title">Немає в наявності</h2>
+        <div class="modal__descr">
+          Наразі цієї гри немає в Україні, тому не гайте час та купуйте інші
+          версії «Монополії», які затягнуть вас у світ фінансової грамотності.
+        </div>
+        <div class="modal__choice">
+          <strong>Оберайте іншу зараз:</strong><br /><br />
+        </div>
+        <div class="lang">
+          <span class="lang__item"><s>Банк без Меж</s></span> |
+          <a href="/ukraine" class="lang__item">України</a> |
+          <a href="/harry-potter" class="lang__item">Гаррі Поттер</a> |
+          <a href="/klasichna" class="lang__item">Класична</a>
+        </div>
+      </div>
+    </div>
     <!-- CSS and JS files -->
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@400&family=Rubik+Mono+One&display=swap"
       rel="stylesheet"
     />
-    <script src="script.js?v=3.0" defer></script>
+    <script src="script.js?v=3.1" defer></script>
     <!-- Analytics -->
     <script
       async

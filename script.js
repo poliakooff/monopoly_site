@@ -51,13 +51,20 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 const buttons = document.querySelectorAll('.button__buy');
-
 const modal = document.querySelector('#modal');
+
+const buttonsBuyAnother = document.querySelectorAll('.button__buy__another');
+const modalBuyAnother = document.querySelector('#modalBuyAnother');
 
 buttons.forEach(function (button) {
   button.addEventListener('click', function () {
-    modal.style.display = 'flex';
-    modal.style.opacity = '1';
+    if (!button.classList.contains('button__buy__another')) {
+      modal.style.display = 'flex';
+      modal.style.opacity = '1';
+    } else {
+      modalBuyAnother.style.display = 'flex';
+      modalBuyAnother.style.opacity = '1';
+    }
   });
 });
 
@@ -67,10 +74,20 @@ modal.addEventListener('click', function (event) {
   }
 });
 
+modalBuyAnother.addEventListener('click', function (event) {
+  if (event.target === modalBuyAnother) {
+    modalBuyAnother.style.display = 'none';
+  }
+});
+
 document.addEventListener('keydown', function (event) {
   if (event.key === 'Escape') {
-    if (modal.style.display === 'flex') {
+    if (
+      modal.style.display === 'flex' ||
+      modalBuyAnother.style.display === 'flex'
+    ) {
       modal.style.display = 'none';
+      modalBuyAnother.style.display = 'none';
     }
   }
 });
