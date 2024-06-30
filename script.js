@@ -64,6 +64,12 @@ buttons.forEach(function (button) {
     } else {
       modalBuyAnother.style.display = 'flex';
       modalBuyAnother.style.opacity = '1';
+
+      modalBuyAnother.addEventListener('click', function (event) {
+        if (event.target === modalBuyAnother) {
+          modalBuyAnother.style.display = 'none';
+        }
+      });
     }
   });
 });
@@ -74,19 +80,11 @@ modal.addEventListener('click', function (event) {
   }
 });
 
-modalBuyAnother.addEventListener('click', function (event) {
-  if (event.target === modalBuyAnother) {
-    modalBuyAnother.style.display = 'none';
-  }
-});
-
 document.addEventListener('keydown', function (event) {
   if (event.key === 'Escape') {
-    if (
-      modal.style.display === 'flex' ||
-      modalBuyAnother.style.display === 'flex'
-    ) {
+    if (modal.style.display === 'flex') {
       modal.style.display = 'none';
+    } else if (modalBuyAnother.style.display === 'flex') {
       modalBuyAnother.style.display = 'none';
     }
   }
